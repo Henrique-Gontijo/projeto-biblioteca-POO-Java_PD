@@ -3,24 +3,24 @@ import java.util.Date;
 
 public class Main {
 	public static void main(String[] args) {
-		Autor autor1 = new Autor("George Orwell", "Britânico");
-		Livro livro1 = new Livro("1984", autor1, "Ficção Distópica", 12, livro1.validarDisponibilidade());
-		Livro[] livros = {livro1};
-		autor1.setLivros(livros);
+		Autor autor = new Autor("George Orwell", "Britânico");
+		Livro livro = new Livro("1984", autor, "Ficção Distópica", 12, true);
+		Livro[] livros = {livro};
+		autor.setLivros(livros);
 
-		Usuario usuario1 = new Usuario("Henrique Lelles", 16, true);
-		Emprestimo emprestimo1 = new Emprestimo(livro1, usuario1, new Date(), new Date());
-		livro1.setDisponibilidade(false);
-		Emprestimo[] emprestimos = {emprestimo1};
-		usuario1.setHistoricoEmprestimos(emprestimos);
+		Usuario usuario = new Usuario("Henrique Lelles", 16);
+		Emprestimo emprestimo = new Emprestimo(livro, usuario, new Date(), new Date());
+		livro.setDisponibilidade(false);
+		Emprestimo[] emprestimos = {emprestimo};
+		usuario.setHistoricoEmprestimos(emprestimos);
 
-		livro1.validarDisponibilidade();
-		System.out.println("Livro: " + emprestimo1.getLivro().getTitulo());
-		System.out.println("Autor: " + emprestimo1.getLivro().getAutor().getNome());
-		System.out.println("Gênero: " + emprestimo1.getLivro().getGenero());
-		System.out.println("Usuário: " + emprestimo1.getUsuario().getNome());
-		System.out.println("Idade: " + emprestimo1.getUsuario().getIdade());
-		System.out.println("Data de Retirada: " + emprestimo1.getDataRetirada());
-		System.out.println("Data de Devolução: " + emprestimo1.getDataDevolucao());
+		livro.validarDisponibilidade();
+		System.out.println("Livro: " + emprestimo.getLivro().getTitulo());
+		System.out.println("Autor: " + emprestimo.getLivro().getAutor().getNome());
+		System.out.println("Gênero: " + emprestimo.getLivro().getGenero());
+		System.out.println("Usuário: " + emprestimo.getUsuario().getNome());
+		System.out.println("Idade: " + emprestimo.getUsuario().getIdade());
+		System.out.println("Data de Retirada: " + emprestimo.getDataRetirada());
+		System.out.println("Data de Devolução: " + emprestimo.getDataDevolucao());
 	}
 }

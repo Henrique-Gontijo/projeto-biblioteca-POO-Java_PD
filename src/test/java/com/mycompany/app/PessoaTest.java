@@ -7,10 +7,7 @@ public class PessoaTest {
     @Test
     public void testGetNome() {
         //  Cria uma intância da classe Pessoa
-        Pessoa pessoa = new Pessoa();
-
-        //  Atribuir nome para a pessoa
-        pessoa.setNome("Henrique");
+        Pessoa pessoa = new Pessoa("Henrique");
 
         // Verifica se o nome retornado é o mesmo que foi definido
         assertEquals("Henrique", pessoa.getNome());
@@ -18,24 +15,22 @@ public class PessoaTest {
     @Test
     public void testSetNome() {
         // Cria uma intância da classe pessoa
-        Pessoa pessoa = new Pessoa();
-
-        // Define um nome para a pessoa
-        pessoa.setNome("Henrique");
+        Pessoa pessoa = new Pessoa("Henrique");
 
         // Verifica se o nome que foi retornado é o mesmo que foi definido
-        assertEquals("Henrique", pessoa.getNome);
+        assertEquals("Henrique", pessoa.getNome());
     }
     @Test
     public void testGetLivros() {
-        //  Cria uma intância da classe Pessoa
-        Pessoa pessoa = new Pessoa();
+        // Cria instância da classe Pessoa e da classe Autor
+        Pessoa pessoa = new Pessoa("Jess");
+        Autor autor = new Autor("Jess", "Brasileira");
 
-        // Define uma lista de livros para a pessoa
+        // Define uma lista de livros para a Pessoa
         Livro[] livros = new Livro[2];
-        livros[0] = new Livro("Java Basico", "Jessica Felix", "tecnologia", true);
-        livros[1] = new Livro("Java Avançado", "Jessica Felix", "tecnologia", true);
-        pessoa.setLivros(livros);
+        livros[0] = new Livro("Java Basico", autor, "tecnologia", true);
+        livros[1] = new Livro("Java Avançado", autor, "tecnologia", true);
+        pessoa.getLivros();
 
         // Verifica se a lista de livros retornada é a mesma que foi definida
         assertArrayEquals(livros, pessoa.getLivros());
