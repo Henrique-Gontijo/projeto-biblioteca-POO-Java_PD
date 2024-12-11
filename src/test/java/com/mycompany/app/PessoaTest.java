@@ -15,6 +15,31 @@ public class PessoaTest {
         // Verifica se o nome retornado é o mesmo que foi definido
         assertEquals("Henrique", pessoa.getNome());
     }
+    @Test
+    public void testSetNome() {
+        // Cria uma intância da classe pessoa
+        Pessoa pessoa = new Pessoa();
+
+        // Define um nome para a pessoa
+        pessoa.setName("Henrique");
+
+        // Verifica se o nome que foi retornado é o mesmo que foi definido
+        assertEquals("Henrique", pessoa.getNome);
+    }
+    @Test
+    public void testGetLivros() {
+        //  Cria uma intância da classe Pessoa
+        Pessoa pessoa = new Pessoa();
+
+        // Define uma lista de livros para a pessoa
+        Livro[] livros = new Livro;
+        livros = new Livro("Livro1");
+        livros = new Livro("Livro2");
+        pessoa.setLivros(livros);
+
+        // Verifica se a lista de livros retornada é a mesma que foi definida
+        assertArrayEquals(livros, pessoa.getLivros());
+    }
 }
 //  Isntância de pessoa de pessoa com um nome
 
