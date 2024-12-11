@@ -21,7 +21,7 @@ public class PessoaTest {
         Pessoa pessoa = new Pessoa();
 
         // Define um nome para a pessoa
-        pessoa.setName("Henrique");
+        pessoa.setNome("Henrique");
 
         // Verifica se o nome que foi retornado é o mesmo que foi definido
         assertEquals("Henrique", pessoa.getNome);
@@ -32,9 +32,9 @@ public class PessoaTest {
         Pessoa pessoa = new Pessoa();
 
         // Define uma lista de livros para a pessoa
-        Livro[] livros = new Livro;
-        livros = new Livro("Livro1");
-        livros = new Livro("Livro2");
+        Livro[] livros = new Livro[2];
+        livros[0] = new Livro("Java Basico", "Jessica Felix", "tecnologia", true);
+        livros[1] = new Livro("Java Avançado", "Jessica Felix", "tecnologia", true);
         pessoa.setLivros(livros);
 
         // Verifica se a lista de livros retornada é a mesma que foi definida

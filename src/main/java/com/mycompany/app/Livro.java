@@ -1,20 +1,22 @@
+package com.mycompany.app;
+
 public class Livro {
 	private String titulo;
 	private Autor autor;
 	private String genero;
 	private int faixaEtaria;
-	private boolean disponibilidade;
+	private boolean disponivel;
 
-	public Livro(String titulo, Autor autor, String genero, int faixaEtaria) {
+	public Livro(String titulo, Autor autor, String genero,int faixaEtaria, boolean disponivel) {
 		this.titulo =  titulo;
 		this.autor = autor;
 		this.genero = genero;
 		this.faixaEtaria = faixaEtaria;
-		this.disponibilidade = true;
+		this.disponivel = disponivel;
 	}
 
-	public void setDisponibilidade(boolean disponibilidade) {
-		this.disponibilidade = disponibilidade;
+	public void setDisponibilidade(boolean disponivel) {
+		this.disponivel = disponivel;
 	}
 
 	public String getTitulo() {
@@ -34,11 +36,7 @@ public class Livro {
         }
 
 	public boolean isDisponivel() {
-		if (disponibilidade == true) {
-			return true;
-		} else {
-			return false;
-		}
+		return disponivel;
 	}
 
 	public void validarDisponibilidade() {

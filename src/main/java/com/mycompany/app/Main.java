@@ -1,13 +1,14 @@
+package com.mycompany.app;
 import java.util.Date;
 
 public class Main {
 	public static void main(String[] args) {
 		Autor autor1 = new Autor("George Orwell", "Britânico");
-		Livro livro1 = new Livro("1984", autor1, "Ficção Distópica", 12);
+		Livro livro1 = new Livro("1984", autor1, "Ficção Distópica", 12, livro1.validarDisponibilidade());
 		Livro[] livros = {livro1};
 		autor1.setLivros(livros);
 
-		Usuario usuario1 = new Usuario("Henrique Lelles", 16);
+		Usuario usuario1 = new Usuario("Henrique Lelles", 16, true);
 		Emprestimo emprestimo1 = new Emprestimo(livro1, usuario1, new Date(), new Date());
 		livro1.setDisponibilidade(false);
 		Emprestimo[] emprestimos = {emprestimo1};
