@@ -28,8 +28,8 @@ public class PessoaTest {
 
         // Define uma lista de livros para a Pessoa
         Livro[] livros = new Livro[2];
-        livros[0] = new Livro("Java Basico", autor, "tecnologia", true);
-        livros[1] = new Livro("Java Avançado", autor, "tecnologia", true);
+        livros[0] = new Livro("Java Basico", autor, 16, "tecnologia", true);
+        livros[1] = new Livro("Java Avançado", autor, 16,"tecnologia", true);
         pessoa.getLivros();
 
         // Verifica se a lista de livros retornada é a mesma que foi definida
