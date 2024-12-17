@@ -6,25 +6,19 @@ import static org.junit.Assert.*;
 public class PessoaTest {
     @Test
     public void testGetNome() {
-        //  Cria uma intância da classe Pessoa
-        Pessoa pessoa = new Pessoa();
-
-        //  Atribuir nome para a pessoa
-        pessoa.setNome("Henrique");
+        //  Cria uma intância da classe Pessoa e a atribui um nome
+        Pessoa pessoa = new Pessoa("Henrique");
 
         // Verifica se o nome retornado é o mesmo que foi definido
         assertEquals("Henrique", pessoa.getNome());
     }
     @Test
     public void testSetNome() {
-        // Cria uma intância da classe pessoa
-        Pessoa pessoa = new Pessoa();
-
-        // Define um nome para a pessoa
-        pessoa.setNome("Henrique");
+        // Cria uma intância da classe Pessoa e define um nome para ela
+        Pessoa pessoa = new Pessoa("Henrique");
 
         // Verifica se o nome que foi retornado é o mesmo que foi definido
-        assertEquals("Henrique", pessoa.getNome);
+        assertEquals("Henrique", pessoa.getNome());
     }
     @Test
     public void testGetLivros() {
@@ -33,8 +27,8 @@ public class PessoaTest {
 
         // Define uma lista de livros para a pessoa
         Livro[] livros = new Livro[2];
-        livros[0] = new Livro("Java Basico", "Jessica Felix", "tecnologia", true);
-        livros[1] = new Livro("Java Avançado", "Jessica Felix", "tecnologia", true);
+        livros[0] = new Livro("Java Basico", "Jessica Felix", "tecnologia", 16,true);
+        livros[1] = new Livro("Java Avançado", "Jessica Felix", "tecnologia", 16,true);
         pessoa.setLivros(livros);
 
         // Verifica se a lista de livros retornada é a mesma que foi definida
