@@ -1,5 +1,5 @@
 package com.mycompany.app;
-// Teste 1
+// Teste 2
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
