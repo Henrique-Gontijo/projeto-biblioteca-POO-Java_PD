@@ -30,7 +30,7 @@ public class PessoaTest {
         Livro[] livros = new Livro[2];
         livros[0] = new Livro("Java Basico", autor, 16, "tecnologia", true);
         livros[1] = new Livro("Java Avançado", autor, 16,"tecnologia", true);
-        pessoa.getLivros();
+        pessoa.setLivros(livros);
 
         // Verifica se a lista de livros retornada é a mesma que foi definida
         assertArrayEquals(livros, pessoa.getLivros());
