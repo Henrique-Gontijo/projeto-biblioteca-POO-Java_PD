@@ -1,7 +1,8 @@
 package com.mycompany.app;
 
-import org.junit;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 public class PessoaTest {
     @Test
@@ -28,8 +29,8 @@ public class PessoaTest {
 
         // Define uma lista de livros para a Pessoa
         Livro[] livros = new Livro[2];
-        livros[0] = new Livro("Java Basico", autor, 16, "tecnologia", true);
-        livros[1] = new Livro("Java Avançado", autor, 16,"tecnologia", true);
+        livros[0] = new Livro("Java Basico", autor, "tecnologia", 16, true);
+        livros[1] = new Livro("Java Avançado", autor,"tecnologia", 16, true);
         pessoa.setLivros(livros);
 
         // Verifica se a lista de livros retornada é a mesma que foi definida
