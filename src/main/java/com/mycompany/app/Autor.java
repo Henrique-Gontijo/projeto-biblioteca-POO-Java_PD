@@ -15,13 +15,13 @@ public class Autor extends Pessoa {
 	}
 
 	public Livro[] getObrasPublicadas() {
-		return getLivros();
+		return super.getLivros();
 	}
 
 	public Livro[] getObrasPublicadasPorGenero(String genero) {
 		List<Livro> obrasPorGenero = new ArrayList<>();
 
-		for (Livro livro : getLivros()) {
+			for (Livro livro : super.getLivros()) {
 			if (livro.getGenero().equalsIgnoreCase(genero)) {
 				obrasPorGenero.add(livro);
 			}

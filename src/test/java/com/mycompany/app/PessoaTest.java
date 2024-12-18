@@ -1,5 +1,5 @@
 package com.mycompany.app;
-// Teste 2
+
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -34,6 +34,17 @@ public class PessoaTest {
         pessoa.setLivros(livros);
 
         // Verifica se a lista de livros retornada é a mesma que foi definida
+        assertArrayEquals(livros, pessoa.getLivros());
+    }
+    @Test
+    public void testSetLivros() {
+        Pessoa pessoa = new Pessoa("Maurice Leblanc");
+        Autor autor = new Autor("Maurice Leblanc", "Francês");
+
+        Livro[] livros = new Livro[1];
+        livros[0] = new Livro("Arsène Lupin vs Sherlock Holmes", autor, "mistério", 12, true);
+        pessoa.setLivros(livros);
+
         assertArrayEquals(livros, pessoa.getLivros());
     }
 }
