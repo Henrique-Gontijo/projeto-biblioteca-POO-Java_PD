@@ -4,6 +4,11 @@ import java.util.Date;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+import com.mycompany.app.Model.Autor;
+import com.mycompany.app.Model.Emprestimo;
+import com.mycompany.app.Model.Livro;
+import com.mycompany.app.Model.Usuario;
+
 public class TestEmprestimo {
     @Test
     public void testGetLivro() {

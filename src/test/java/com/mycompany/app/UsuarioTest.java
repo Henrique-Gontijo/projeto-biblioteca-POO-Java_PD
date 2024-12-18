@@ -5,6 +5,11 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+import com.mycompany.app.Model.Autor;
+import com.mycompany.app.Model.Emprestimo;
+import com.mycompany.app.Model.Livro;
+import com.mycompany.app.Model.Usuario;
+
 public class UsuarioTest {
     @Test
     public void testGetIdade() {

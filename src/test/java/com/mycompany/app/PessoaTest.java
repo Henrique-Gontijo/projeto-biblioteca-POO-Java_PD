@@ -4,6 +4,10 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+import com.mycompany.app.Model.Autor;
+import com.mycompany.app.Model.Livro;
+import com.mycompany.app.Model.Pessoa;
+
 public class PessoaTest {
     @Test
     public void testGetNome() {

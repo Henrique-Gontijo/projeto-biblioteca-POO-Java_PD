@@ -3,6 +3,9 @@ package com.mycompany.app;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+import com.mycompany.app.Model.Autor;
+import com.mycompany.app.Model.Livro;
+
 public class LivroTest {
     @Test
     public void testGetTitulo() {
