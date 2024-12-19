@@ -1,44 +1,35 @@
 package com.mycompany.app.Model;
 
-import com.mycompany.app.Interface.AutorInterface;
-
-public class Livro implements AutorInterface {
-	private String titulo;
-	private Autor autor;
+public class Livro extends Publicacao {
 	private String genero;
 	private int faixaEtaria;
 	private boolean disponivel;
 
 	public Livro(String titulo, Autor autor, String genero,int faixaEtaria, boolean disponivel) {
-		this.titulo =  titulo;
-		this.autor = autor;
+		super(titulo, autor);
 		this.genero = genero;
 		this.faixaEtaria = faixaEtaria;
 		this.disponivel = disponivel;
 	}
 
-	public void setDisponibilidade(boolean disponivel) {
-		this.disponivel = disponivel;
-	}
-
-	public String getTitulo() {
-		return this.titulo;
-	}
-
-	public Autor getAutor() {
-		return this.autor;
-	}
-
 	public String getGenero() {
-		return this.genero;
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
 	}
 
 	public int getFaixaEtaria() {
-                return this.faixaEtaria;
-        }
+            return faixaEtaria;
+    }
 
 	public boolean isDisponivel() {
 		return disponivel;
+	}
+
+	public void setDisponibilidade(boolean disponivel) {
+		this.disponivel = disponivel;
 	}
 
 	public void validarDisponibilidade() {
@@ -50,7 +41,7 @@ public class Livro implements AutorInterface {
 	}
 
 	@Override
-	public void publicar() {
-		System.out.println("Livro publicando...");
+	public void validarPublicacao() {
+		System.out.println("Validando publicação de livro...");
 	}
 }
