@@ -29,13 +29,4 @@ public class Autor extends Pessoa {
 
 		return obrasPorGenero.toArray(new Livro[obrasPorGenero.size()]);
 	}
-	@Override
-	public String getNome() {
-		return super.getNome();
-	}
-
-	@Override
-	public void setNome(String nome) {
-		return super.setNome(nome);
-	}
 }

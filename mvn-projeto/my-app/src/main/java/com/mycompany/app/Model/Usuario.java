@@ -1,5 +1,6 @@
 package com.mycompany.app.Model;
 
+
 public class Usuario extends Pessoa{
 	private int  idade;
 	private Emprestimo[] historicoEmprestimos;
