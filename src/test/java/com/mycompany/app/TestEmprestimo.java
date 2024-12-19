@@ -17,7 +17,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -35,7 +35,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -53,7 +53,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -71,7 +71,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -89,7 +89,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -107,7 +107,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -125,7 +125,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -143,7 +143,7 @@ public class TestEmprestimo {
         Date dataDevolucao = new Date();
 
         //  Cria uma intância da classe Livro
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria uma intância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);

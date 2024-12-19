@@ -14,8 +14,12 @@ public class Artigo extends Publicacao {
         return genero;
     }
 
-    public boolean getPublicado() {
+    public boolean isPublicado() {
         return publicado;
+    }
+
+    public void setPublicado(boolean publicado) {
+        this.publicado = publicado;
     }
 
     @Override

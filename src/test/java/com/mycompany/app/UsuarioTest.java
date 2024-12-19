@@ -35,7 +35,7 @@ public class UsuarioTest {
         Date dataDevolucao = new Date();
 
         //  Cria instância da classe
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria instância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);
@@ -58,7 +58,7 @@ public class UsuarioTest {
         Date dataDevolucao = new Date();
 
         //  Cria instância da classe
-        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", 16, true);
+        Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês", false), "Tecnologia", 16, true);
 
         //  Cria instância da classe Usuario
         Usuario usuario = new Usuario("Gabriel", 21);

@@ -4,10 +4,12 @@ import java.util.List;
 
 public class Autor extends Pessoa {
 	private String nacionalidade;
+	private boolean autorUsuario;
 
-	public Autor(String nome, String nacionalidade) {
+	public Autor(String nome, String nacionalidade, boolean autorUsuario) {
 		super(nome);
 		this.nacionalidade = nacionalidade;
+		this.autorUsuario = autorUsuario;
 	}
 
 	public String getNacionalidade() {
@@ -28,5 +30,13 @@ public class Autor extends Pessoa {
 		}
 
 		return obrasPorGenero.toArray(new Livro[obrasPorGenero.size()]);
+	}
+
+	public boolean isAutorUsuario() {
+		return autorUsuario;
+	}
+
+	public void setAutorUsuario(boolean autorUsuario) {
+		this.autorUsuario = autorUsuario;
 	}
 }

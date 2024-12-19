@@ -10,7 +10,7 @@ public class LivroTest {
     @Test
     public void testGetTitulo() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -21,7 +21,7 @@ public class LivroTest {
     @Test
     public void testSetTitulo() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -32,7 +32,7 @@ public class LivroTest {
     @Test
     public void testGetAutor() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -43,7 +43,7 @@ public class LivroTest {
     @Test
     public void testSetAutor() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -54,7 +54,7 @@ public class LivroTest {
     @Test
     public void testGetGenero() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -65,7 +65,7 @@ public class LivroTest {
     @Test
     public void testSetGenero() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -76,7 +76,7 @@ public class LivroTest {
     @Test
     public void testGetFaixaEtaria() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -87,7 +87,7 @@ public class LivroTest {
     @Test
     public void testSetFaixaEtaria() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria isntância da classe Livro
         Livro livro = new Livro("Java Basico", autor, "tecnologia", 16,true);
@@ -98,7 +98,7 @@ public class LivroTest {
     @Test
     public void testIsDisponivel() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria duas isntâncias da classe Livro
         Livro livro1 = new Livro("Java Basico", autor, "tecnologia", 16, true);
@@ -112,7 +112,7 @@ public class LivroTest {
     @Test
     public void testSetDisponibilidade() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria duas isntâncias da classe Livro
         Livro livro1 = new Livro("Java Basico", autor, "tecnologia", 16, true);
@@ -126,7 +126,7 @@ public class LivroTest {
     @Test
     public void testValidarDisponibilidade() {
         //  Cria isntância da classe Autor
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         //  Cria duas isntâncias da classe Livro
         Livro livro1 = new Livro("Java Basico", autor, "tecnologia", 16, true);

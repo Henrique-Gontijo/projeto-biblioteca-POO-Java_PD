@@ -11,7 +11,7 @@ public class AutorTest {
     @Test
     public void testGetNacionalidade() {
         //  Cria intância de Autor
-        Autor autor = new Autor("Henrique", "Brasileiro");
+        Autor autor = new Autor("Henrique", "Brasileiro", true);
 
         //  Verifica se a nacionalidade retornada é a mesma que foi definida no construtor
         assertEquals("Brasileiro", autor.getNacionalidade());
@@ -19,7 +19,7 @@ public class AutorTest {
     @Test
     public void testSetNacionalidade() {
         //  Cria intância de Autor
-        Autor autor = new Autor("Henrique", "Brasileiro");
+        Autor autor = new Autor("Henrique", "Brasileiro", true);
 
         //  Verifica se a nacionalidade retornada é a mesma que foi definida no construtor
         assertEquals("Brasileiro", autor.getNacionalidade());
@@ -27,7 +27,7 @@ public class AutorTest {
     @Test
     public void testGetObrasPublicadas() {
         //  Cria intância de Autor
-        Autor autor = new Autor("Geraldo Rodrigues da Costa", "Brasileiro");
+        Autor autor = new Autor("Geraldo Rodrigues da Costa", "Brasileiro", false);
 
         //  Cria um array de livros
         Livro[] livros = new Livro[2];
@@ -43,7 +43,7 @@ public class AutorTest {
     @Test
     public void testSetObrasPublicadas() {
         //  Cria intância de Autor
-        Autor autor = new Autor("Geraldo Rodrigues da Costa", "Brasileiro");
+        Autor autor = new Autor("Geraldo Rodrigues da Costa", "Brasileiro", false);
 
         //  Cria um array de livros
         Livro[] livros = new Livro[2];
@@ -59,7 +59,7 @@ public class AutorTest {
     @Test
     public void testGetObrasPublicadasPorGenero() {
         //  Cria isntância de Autor
-        Autor autor = new Autor("Machado de Assis", "Brasileiro");
+        Autor autor = new Autor("Machado de Assis", "Brasileiro", false);
 
         //  Cria um array de livros
         Livro[] livros = new Livro[4];
@@ -78,6 +78,30 @@ public class AutorTest {
 
         // Verifica se o array retornado é o mesmo array de teste que foi criado
         assertArrayEquals(livrosDeRomance, autor.getObrasPublicadasPorGenero("romance"));
+    }
+    @Test
+    public void testIsAutorUsuario() {
+        //  Cria duas intâncias de Autor
+        Autor autor1 = new Autor("Henrique", "Brasileiro", true);
+        Autor autor2 = new Autor("Geraldo Rodrigues da Costa", "Brasileiro", false);
+
+        //  Testa se o valor booleano retornado é o mesmo que foi definido no construtor
+        assertEquals(true, autor1.isAutorUsuario());
+        assertEquals(false, autor2.isAutorUsuario());
+    }
+    @Test
+    public void testSetAutorUsuario() {
+        //  Cria duas intâncias de Autor
+        Autor autor1 = new Autor("Henrique", "Brasileiro", false);
+        Autor autor2 = new Autor("Geraldo Rodrigues da Costa", "Brasileiro", true);
+
+        //  Muda o valor de autorUsuario
+        autor1.setAutorUsuario(true);
+        autor2.setAutorUsuario(false);
+
+        //  Testa se o valor booleano retornado é o mesmo que foi definido pelo método setAutorUsuario
+        assertEquals(true, autor1.isAutorUsuario());
+        assertEquals(false, autor2.isAutorUsuario());
     }
 }
 

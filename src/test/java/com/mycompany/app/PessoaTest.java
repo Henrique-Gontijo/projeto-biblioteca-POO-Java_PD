@@ -29,7 +29,7 @@ public class PessoaTest {
     public void testGetLivros() {
         // Cria instância da classe Pessoa e da classe Autor
         Pessoa pessoa = new Pessoa("Jess");
-        Autor autor = new Autor("Jess", "Brasileira");
+        Autor autor = new Autor("Jess", "Brasileira", false);
 
         // Define uma lista de livros para a Pessoa
         Livro[] livros = new Livro[2];
@@ -43,7 +43,7 @@ public class PessoaTest {
     @Test
     public void testSetLivros() {
         Pessoa pessoa = new Pessoa("Maurice Leblanc");
-        Autor autor = new Autor("Maurice Leblanc", "Francês");
+        Autor autor = new Autor("Maurice Leblanc", "Francês", false);
 
         Livro[] livros = new Livro[1];
         livros[0] = new Livro("Arsène Lupin vs Sherlock Holmes", autor, "mistério", 12, true);
