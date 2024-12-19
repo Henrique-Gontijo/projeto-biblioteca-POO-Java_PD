@@ -1,6 +1,8 @@
 package com.mycompany.app.Model;
 
-public class Usuario extends Pessoa{
+import com.mycompany.app.Interface.AutorInterface;
+
+public class Usuario extends Pessoa implements AutorInterface {
 	private int  idade;
 	private Emprestimo[] historicoEmprestimos;
 
@@ -20,4 +22,10 @@ public class Usuario extends Pessoa{
 	public void setHistoricoEmprestimos(Emprestimo[] historicoEmprestimos) {
 		this.historicoEmprestimos = historicoEmprestimos;
 	}
+
+	@Override
+	public void publicar() {
+		System.out.println("Usuário publicando...");
+	}
+
 }
