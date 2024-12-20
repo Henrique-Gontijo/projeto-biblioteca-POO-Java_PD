@@ -1,15 +1,18 @@
 package com.mycompany.app.Model;
 
+//	Exemplo de injeção de dependência
 public class Livro extends Publicacao {
 	private String genero;
 	private int faixaEtaria;
 	private boolean disponivel;
+	private Autor autor;
 
 	public Livro(String titulo, Autor autor, String genero,int faixaEtaria, boolean disponivel) {
 		super(titulo, autor);
 		this.genero = genero;
 		this.faixaEtaria = faixaEtaria;
 		this.disponivel = disponivel;
+		this.autor = autor;
 	}
 
 	public String getGenero() {
