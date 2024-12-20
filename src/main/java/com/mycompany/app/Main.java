@@ -1,11 +1,14 @@
 package com.mycompany.app;
 import java.util.Date;
 
+import com.mycompany.app.Interface.EstrategiaPublicacao;
 import com.mycompany.app.Model.Artigo;
 import com.mycompany.app.Model.Autor;
 import com.mycompany.app.Model.Emprestimo;
 import com.mycompany.app.Model.Livro;
 import com.mycompany.app.Model.Usuario;
+import com.mycompany.app.Model.UsuarioAutor;
+import com.mycompany.app.Strategy.EstrategiaPublicacaoArtigo;
 
 public class Main {
 	public static void main(String[] args) {
@@ -41,7 +44,14 @@ public class Main {
 		System.out.println("Autor: " + autor2.getNome());
 		System.out.println("Nacionalidade do autor: " + autor2.getNacionalidade());
 		System.out.println("É autor usuário: " + autor2.isAutorUsuario());
-		
 
+		System.out.println("");
+		System.out.println("------------------------------------------------------------------------");
+		System.out.println("");
+
+		UsuarioAutor usuarioAutor = new UsuarioAutor();
+		EstrategiaPublicacao estrategia = new EstrategiaPublicacaoArtigo();
+		usuarioAutor.setEstrategiaPublicao(estrategia);
+		usuarioAutor.publicar();
 	}
 }

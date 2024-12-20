@@ -1,5 +1,5 @@
 package com.mycompany.app.Interface;
 
-public interface AutorInterface {
+public interface EstrategiaPublicacao {
     void publicar();
 }
