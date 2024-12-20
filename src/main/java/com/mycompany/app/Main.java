@@ -40,8 +40,6 @@ public class Main {
 		System.out.println("Gênero: " + artigo.getGenero());
 		System.out.println("Autor: " + autor2.getNome());
 		System.out.println("Nacionalidade do autor: " + autor2.getNacionalidade());
-		System.out.println("É autor usuário: " + autor2.isAutorUsuario());
-		
-
+		System.out.println("É autor usuário: " + autor2.isAutorUsuario());	
 	}
 }
